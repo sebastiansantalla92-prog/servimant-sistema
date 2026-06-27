@@ -40,7 +40,7 @@ public class SolicitudDAO {
                 "INNER JOIN prioridad p ON s.id_prioridad = p.id_prioridad " +
                 "INNER JOIN estado e ON s.id_estado = e.id_estado " +
                 "INNER JOIN sector se ON s.id_sector = se.id_sector " +
-                "ORDER BY s.id_solicitud DESC";
+                "ORDER BY s.id_solicitud ASC";
 
         List<Solicitud> solicitudes = new ArrayList<>();
 
