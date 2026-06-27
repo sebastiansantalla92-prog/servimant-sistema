@@ -5,18 +5,22 @@ import vista.IntervencionVista;
 import vista.ListadoSolicitudesVista;
 import vista.LoginVista;
 import vista.SolicitudVista;
+import vista.ReporteVista;
+import java.nio.charset.StandardCharsets;
 
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner =
+        new Scanner(System.in, StandardCharsets.UTF_8);
 
         LoginVista loginVista = new LoginVista();
         SolicitudVista solicitudVista = new SolicitudVista();
         ListadoSolicitudesVista listadoVista = new ListadoSolicitudesVista();
         IntervencionVista intervencionVista = new IntervencionVista();
+        ReporteVista reporteVista = new ReporteVista();
 
         Usuario usuarioAutenticado = loginVista.iniciarSesion(scanner);
 
@@ -43,6 +47,8 @@ public class Main {
                 case 3 -> listadoVista.asignarTecnico(scanner);
                 case 4 -> intervencionVista.registrarIntervencion(scanner);
                 case 5 -> intervencionVista.consultarHistorial(scanner);
+                case 6 -> reporteVista.mostrarResumenPorEstado();
+                case 7 -> solicitudVista.cerrarSolicitud(scanner);
                 case 0 -> System.out.println("Finalizando sistema ServiMant...");
                 default -> System.out.println("Opción inválida.");
             }
@@ -60,6 +66,8 @@ public class Main {
         System.out.println("3. Asignar técnico responsable");
         System.out.println("4. Registrar intervención");
         System.out.println("5. Consultar historial de intervenciones");
+        System.out.println("6. Consultar resumen por estado");
+        System.out.println("7. Cerrar solicitud");
         System.out.println("0. Salir");
     }
 }
