@@ -1,6 +1,7 @@
 package vista;
 
 import modelo.Solicitud;
+import modelo.Tecnico;
 import servicio.AsignacionServicio;
 import servicio.SolicitudServicio;
 
@@ -33,29 +34,84 @@ public class ListadoSolicitudesVista {
     }
 
     public void asignarTecnico(Scanner scanner) {
-        System.out.println("=== Asignar técnico responsable ===");
 
-        try {
-            System.out.println("Solicitudes pendientes:");
-            asignacionServicio.listarSolicitudesPendientes().forEach(System.out::println);
+    System.out.println("=== Asignar técnico responsable ===");
 
-            System.out.print("ID solicitud: ");
-            int idSolicitud = Integer.parseInt(scanner.nextLine());
+    try {
+        List<Solicitud> solicitudesPendientes =
+                asignacionServicio.listarSolicitudesPendientes();
 
-            System.out.println("Técnicos disponibles:");
-            asignacionServicio.listarTecnicosDisponibles().forEach(System.out::println);
-
-            System.out.print("ID técnico: ");
-            int idTecnico = Integer.parseInt(scanner.nextLine());
-
-            System.out.print("Observación: ");
-            String observacion = scanner.nextLine();
-
-            asignacionServicio.asignarTecnico(idSolicitud, idTecnico, observacion);
-            System.out.println("Asignación registrada correctamente. Estado actualizado a Asignada.");
-
-        } catch (SQLException | IllegalArgumentException e) {
-            System.out.println("No se pudo realizar la asignación: " + e.getMessage());
+        if (solicitudesPendientes.isEmpty()) {
+            System.out.println(
+                    "No existen solicitudes pendientes para asignar."
+            );
+            return;
         }
+
+        System.out.println("Solicitudes pendientes:");
+
+        solicitudesPendientes.forEach(System.out::println);
+
+        System.out.print("ID solicitud: ");
+        int idSolicitud =
+                Integer.parseInt(scanner.nextLine());
+
+        List<Tecnico> tecnicosDisponibles =
+                asignacionServicio.listarTecnicosDisponibles();
+
+        if (tecnicosDisponibles.isEmpty()) {
+            System.out.println(
+                    "No existen técnicos disponibles."
+            );
+            return;
+        }
+
+        System.out.println("Técnicos disponibles:");
+
+        tecnicosDisponibles.forEach(System.out::println);
+
+        System.out.print("ID técnico: ");
+        int idTecnico =
+                Integer.parseInt(scanner.nextLine());
+
+        System.out.print("Observación: ");
+        String observacion =
+                scanner.nextLine().trim();
+
+        asignacionServicio.asignarTecnico(
+                idSolicitud,
+                idTecnico,
+                observacion
+        );
+
+        System.out.println(
+                "Asignación registrada correctamente. "
+                + "Estado actualizado a Asignada."
+        );
+
+    } catch (NumberFormatException e) {
+
+        System.out.println(
+                "Error: los identificadores de la solicitud "
+                + "y del técnico deben ser valores numéricos."
+        );
+
+    } catch (IllegalArgumentException e) {
+
+        System.out.println(
+                "Datos inválidos: " + e.getMessage()
+        );
+
+    } catch (SQLException e) {
+
+        System.out.println(
+                "No se pudo realizar la asignación "
+                + "por un error en la base de datos."
+        );
+
+        System.out.println(
+                "Detalle técnico: " + e.getMessage()
+        );
+    }
     }
 }
