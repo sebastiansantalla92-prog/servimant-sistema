@@ -1,0 +1,57 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.2 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.2">
+  <diagram name="Página-1" id="eWZsXjX8xRSHVBNxemja">
+    <mxGraphModel dx="918" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g6SUxGbTyKhUhWOgzUz3-1" value="Sistema ServiMant" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="410" y="270" width="930" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-1" value="principal&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Main&lt;/span&gt;&lt;/div&gt;" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="420" y="300" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-2" value="vista&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;LoginVista&lt;br&gt;SolicitudVista&lt;br&gt;ListadoSolicitudesVista&lt;br&gt;IntervencionVista&lt;br&gt;ReporteVista&lt;/span&gt;&lt;/div&gt;" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="610" y="300" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-3" value="servicio&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;SolicitudServicio&lt;br&gt;AsignacionServicio&lt;br&gt;IntervencionServicio&lt;br&gt;ReporteServicio&lt;/span&gt;&lt;/div&gt;" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="800" y="300" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-4" value="dao&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ConexionBD&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;UsuarioDAO&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SolicitudDAO&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TecnicoDAO&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;IntervencionDAO&lt;/span&gt;&lt;/span&gt;&lt;div&gt;&lt;pre data-end=&quot;2579&quot; data-start=&quot;2465&quot; class=&quot;overflow-visible! px-0!&quot;&gt;&lt;div class=&quot;relative w-full mt-4 mb-1&quot;&gt;&lt;div class=&quot;&quot;&gt;&lt;div class=&quot;contents&quot;&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;h-full min-h-0 min-w-0&quot;&gt;&lt;div class=&quot;h-full min-h-0 min-w-0&quot;&gt;&lt;div class=&quot;border border-token-border-light border-radius-3xl corner-superellipse/1.1 rounded-3xl&quot;&gt;&lt;div class=&quot;h-full w-full border-radius-3xl bg-token-bg-elevated-secondary corner-superellipse/1.1 overflow-clip rounded-3xl lxnfua_clipPathFallback&quot;&gt;&lt;div class=&quot;pointer-events-none absolute end-1.5 top-1 z-2 md:end-2 md:top-1&quot;&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;pe-11 pt-3&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼd ͼr&quot; dir=&quot;ltr&quot; id=&quot;code-block-viewer&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;pre class=&quot;cm-content q9tKkq_readonly m-0&quot;&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="990" y="300" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-5" value="modelo&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Persona&lt;br&gt;Usuario&lt;br&gt;Tecnico&lt;br&gt;Solicitud&lt;br&gt;Asignacion&lt;br&gt;Intervencion&lt;br&gt;Rol&lt;br&gt;Categoria&lt;br&gt;Prioridad&lt;br&gt;Estado&lt;br&gt;Sector&lt;/span&gt;" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="800" y="510" width="150" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-6" value="database&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;servimant_db&lt;/span&gt;" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="300" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=150;exitDy=55;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=55;entryPerimeter=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" parent="1" source="WaYFUK7jhgksKgyLQFkg-1" target="WaYFUK7jhgksKgyLQFkg-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=150;exitDy=55;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=55;entryPerimeter=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" parent="1" source="WaYFUK7jhgksKgyLQFkg-2" target="WaYFUK7jhgksKgyLQFkg-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=150;exitDy=55;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=55;entryPerimeter=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" parent="1" source="WaYFUK7jhgksKgyLQFkg-3" target="WaYFUK7jhgksKgyLQFkg-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=55;entryPerimeter=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" parent="1" source="WaYFUK7jhgksKgyLQFkg-2" target="WaYFUK7jhgksKgyLQFkg-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=40;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" parent="1" source="WaYFUK7jhgksKgyLQFkg-3" target="WaYFUK7jhgksKgyLQFkg-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="875" y="440" />
+              <mxPoint x="840" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=150;entryDy=55;entryPerimeter=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" parent="1" source="WaYFUK7jhgksKgyLQFkg-4" target="WaYFUK7jhgksKgyLQFkg-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WaYFUK7jhgksKgyLQFkg-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=150;exitDy=55;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=55;entryPerimeter=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" parent="1" source="WaYFUK7jhgksKgyLQFkg-4" target="WaYFUK7jhgksKgyLQFkg-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
